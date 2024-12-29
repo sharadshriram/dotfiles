@@ -35,6 +35,14 @@ touch ~/.config/tmux/tmux.conf
 echo "run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux" >> ~/.config/tmux/tmux.conf
 tmux source ~/.config/tmux/tmux.conf
 
+## Install jekyll
+sudo apt-get install ruby-full build-essential zlib1g-dev
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+gem install jekyll bundler
+
 
 ## Notes
 echo "For enabling Cappucin theme on gnome-terminal: Select from Edit -> Preferences."
