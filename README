@@ -1,0 +1,10 @@
+## Dotfiles
+Repository with dotfiles and config backups for tools and software I frequent.
+
+## Post install script
+I use Debian-based distributions as my primary development machines and the post install script ensures that all generic software I use are available when I switch to a new machine.
+
+**NOTE:** This repo is not stable and may have breaking changes, please exercise caution before using.
+
+## License
+All files in this repo is covered under the MIT License.
