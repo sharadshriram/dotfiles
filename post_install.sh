@@ -11,12 +11,11 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
 
-
 ## Installing deb packages
 sudo apt install --upgrade curl git neovim tmux python3-virtualenv virtualbox virtualbox-ext-pack 
 
 
-# Install brave
+## Install brave
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
@@ -24,7 +23,7 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] http
 sudo apt update
 sudo apt install brave-browser
 
-# steam
+## Install steam
 sudo apt install steam
 
 
@@ -43,6 +42,10 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 gem install jekyll bundler
 
+## Cleanup
+sudo apt clean
+sudo apt autoremove
+sudo apt autoclean
 
 ## Notes
 echo "For enabling Cappucin theme on gnome-terminal: Select from Edit -> Preferences."
