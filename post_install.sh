@@ -24,6 +24,10 @@ sudo apt install brave-browser
 ## Install steam
 sudo apt install steam
 
+# Install hugo for website
+sudo snap install hugo
+
+
 ## cappucin theme for tmux
 mkdir -p ~/.config/tmux/plugins/catppuccin
 git clone -b v2.1.2 https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin/tmux
